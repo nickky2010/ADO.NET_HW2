@@ -165,13 +165,8 @@
     <None Include="Properties\Resources\monkey.gif" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\dbo.CreateDB.sql" />
     <Content Include="App_Data\dbo.RussianWords.sql" />
-    <Content Include="App_Data\TrainingTranslate.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="App_Data\TrainingTranslate.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.1">
