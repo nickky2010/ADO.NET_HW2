@@ -12,6 +12,21 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -52,8 +67,15 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Localizations\EnglishLocalization.cs" />
+    <Compile Include="Localizations\ILocalization.cs" />
+    <Compile Include="Localizations\RussianLocalization.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StatusTraining.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -62,6 +84,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -74,7 +97,93 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\giphy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\dog.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\apple.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\bear.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\bicycle.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\cake.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\cat.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\cofe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\elefante.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\helicopter.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\horse.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\pear.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\pineapple.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\programmer.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\sea.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\smartphone.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\tea.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\telephone.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\truck.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\wave.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\monkey.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\dbo.RussianWords.sql" />
+    <Content Include="App_Data\TrainingTranslate.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="App_Data\TrainingTranslate.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.1 %28x86 и x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
