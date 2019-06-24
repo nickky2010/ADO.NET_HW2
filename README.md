@@ -1,19 +1,43 @@
-# ADO.NET_WinForms_HW2
-ITStep(Gomel)-ADO.NET WinForms Home work 2
+# ADO.NET - Home work 2
+***
+Написать приложение `WinForms` для запоминания английских слов.
 
-Write a WinForms application to memorize English words.
- 
+Вид окна приложения после запуска:
 
-The database should consist of one table with the fields: Id, word in English, Russian translation, picture-hint.
+![Alt text](/Task/Image/1.PNG?raw=true "Приложение после запуска")
 
-In the "Training" mode, English words are randomly selected from the database and displayed on the screen. The user enters the Russian translation. When you click the Confirm button, a check is performed and, if the answer is correct, the word is highlighted in green, and if it is incorrect, the word is highlighted in red.
- 
- 
-If necessary, the user can get a picture-hint when you click on the appropriate button.
-After pressing the Next button, a new word appears.
- 
- 
-In edit mode, you can change, delete, add information, undo recent actions.
- 
- 
-When you click the Add Picture button, the user selects the file in the standard dialog box, after which the picture is inserted into the highlighted row of the table.
+БД  должна состоять из одной таблицы с полями: 
+
+* Id, 
+* слово на английском языке, 
+* русский перевод, 
+* картинка-подсказка.
+
+
+В режиме ***«Тренинг»*** случайным образом выбираются  из БД  английские слова и выводятся на экран. Пользователь вводит русский перевод. При нажатии кнопки Подтвердить осуществляется проверка и, если ответ правильный, слово подсвечивается зеленым цветом, а если неправильный – красным.
+
+![Alt text](/Task/Image/2.PNG?raw=true "Пример")
+
+При необходимости пользователь может получить картинку-подсказку при нажатии на соответствующую кнопку.
+После нажатия на кнопку ***Дальше*** появляется новое слово. 
+
+![Alt text](/Task/Image/3.PNG?raw=true "Новое слово")
+
+В режиме редактирования  можно изменять, удалять, добавлять информацию, отменять последние действия.
+
+![Alt text](/Task/Image/4.PNG?raw=true "Редактирование")
+
+При нажатии кнопки ***Добавить картинку***   пользователь выбирает файл в стандартном диалоговом окне, после чего картинка вставляется в выделенную строку таблицы.
+
+![Alt text](/Task/Image/5.PNG?raw=true "Добавить картинку")
+
+***
+## Решение задания:
+
+![Alt text](/Task/Image/6.PNG?raw=true "")
+
+![Alt text](/Task/Image/7.PNG?raw=true "")
+
+![Alt text](/Task/Image/8.PNG?raw=true "")
+
+![Alt text](/Task/Image/9.PNG?raw=true "")
